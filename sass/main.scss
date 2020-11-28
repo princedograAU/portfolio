@@ -5,6 +5,13 @@
 
 // base imports
 @import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/animations";
 
 // layout import
 @import "layout/navigation";
+
+// pages import
+@import "pages/home";
+

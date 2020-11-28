@@ -14,7 +14,7 @@
 
         <!-- mobile navigation toggle button -->
 
-        <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
         <label for="navi-toggle" class="navigation__button">
             <span class="navigation__icon"></span>
@@ -23,13 +23,196 @@
         <!-- regular devices nav bar -->
 
         <nav class="nvigation__nav">
-
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#about" class="navigation__link">about</a></li>
+                <li class="navigation__item"><a href="#skills" class="navigation__link">skills</a></li>
+                <li class="navigation__item"><a href="#experience" class="navigation__link">experience</a></li>
+                <li class="navigation__item"><a href="#projects" class="navigation__link">projects</a></li>
+                <li class="navigation__item"><a href="#contacts" class="navigation__link">contacts</a></li>
+            </ul>
         </nav>
         <div class="navigation__logo">
-
+            <a href="#header" class="logo__link">prince dogra</a>
         </div>
         <div class="navigation__social">
+            <a class="social__icon--round" href="#">
+                <svg class="social__icon--inner" fill="#C6C6C6">
+                    <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
+                </svg>
+            </a>
+            <a class="social__icon--round" href="https://github.com/princedograAU" target="_blank">
+                <svg class="social__icon--inner">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="container__fluid pt--xlarge pb--xlarge" id="header">
+        <div class="header container">
+            <div class="header__intro">
+                <h2>HELLO EVERYONE, I AM</h2>
+                <h1>PRINCE DOGRA</h1>
+                <h2>FULL-STACK DJANGO/REACT DEVELOPER</h2>
+                <h3>I am an artist who loves to code</h3>
+    
+                <a href="#" class="btn btn__primary btn__animate mt--xxlarge">download resume</a>
+            </div>
+            <div class="header__img">
+                <img src="img/profile-photo.jpg" alt="profile photo">
+            </div>
+        </div>
+    </div>
+    <div class="container__fluid bg__light" id="about">
+        <div class="about container">
+            <div class="heading">about</div>
+            <div class="about__main mt--large">
+                <div class="about__description">
+                    <h2>I am a Full-Stack Django/React <br/> from Melbourne, Australia</h2>
+                    <p>
+                        I am a young 26 years old full-stack developer working at Sleigh Group as a backend Django and
+                        frontend React developer. I am an MIT Graduate from Monash University. I love solving real-life
+                        problems by making intuitive solutions using code.
+                    </p>
+                    <p>
+                        Since 2014, I have gained invaluable experience in the designing and developing a modular 
+                        production ready applications with 100% accuracy and easy maintainability. I have contributed
+                        significantly in various review meetings, sprints and discussions to deliver best organizational
+                        gains.
+                    </p>
+                    <p>
+                        Being a technology enthusiast, I love to learn new skills and implement them in my current work. 
+                        For example - robot in this picture was developed by me with my friends at university in 2014 using
+                        the popular technologies of that time namely Android and IOT.
+                    </p>
+                </div>
+                <div class="about__img">
+                    <img src="img/rovodroid.jpeg" alt="rovodroid">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container__fluid" id="skills">
+        <div class="skills container">
+            <div class="heading">skills</div>
+            <div class="skills__main mt--xlarge">
+                <div class="skills__description">
+                    <h2>Front-end</h2>
+                    <ul>
+                        <li>JavaScript ( ECMAScript )</li>
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>HTML</li>
+                        <li>SCSS/CSS</li>
+                        <li>Webpack</li>
+                        <li>Jest</li>
+                        <li>Enzyme</li>
+                    </ul>
+                    <h2>Back-end</h2>
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Django Rest Framework</li>
+                    </ul>
+                    <h2>DevOps</h2>
+                    <ul>
+                        <li>Dockers</li>
+                        <li>AWS</li>
+                        <li>Gitlab</li>
+                    </ul>
+                    <h2>Other</h2>
+                    <ul>
+                        <li>Postgres DB</li>
+                        <li>Git</li>
+                        <li>Linux/Windows</li>
+                        <li>Pandas</li>
+                    </ul>
+                </div>
+                <div class="skills__img">
 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container__fluid bg__primary" id="education">
+        <div class="education container ">
+            <div class="heading color__secondary">" I am an MIT Graduate from Monash University "</div>
+        </div>
+    </div>
+    <div class="container__fluid bg__light" id="experience">
+        <div class="experience container ">
+            <div class="heading">experience</div>
+            <div class="experience__main">
+
+            </div>
+        </div>
+    </div>
+    <div class="container__fluid" id="projects">
+        <div class="projects container ">
+            <div class="heading">projects</div>
+
+        </div>
+    </div>
+    <div class="container__fluid" id="contacts">
+        <div class="contacts container ">
+            <div class="heading">contacts</div>
+            <div class="contacts__main mt--xlarge">
+                <div class="contacts__details">
+                    <ul class="contacts__details--list">
+                        <li class="contacts__details--item">
+                            <div class="social__icon--round">
+                                <svg class="social__icon--inner">
+                                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                </svg>
+                            </div>
+                            <span>+61 423862023</span>
+                        </li>
+                        <li class="contacts__details--item">
+                            <div class="social__icon--round">
+                                <svg class="social__icon--inner">
+                                    <use xlink:href="img/sprite.svg#icon-envelop"></use>
+                                </svg>
+                            </div>
+                            <span>princedogra.au@gmail.com</span>
+                        </li>
+                        <li class="contacts__details--item">
+                            <div class="social__icon--round">
+                                <svg class="social__icon--inner">
+                                    <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
+                                </svg>
+                            </div>
+                            <span>https://www.linkedin.com/in/princedogra/</span>
+                        </li>
+                        <li class="contacts__details--item">
+                            <div class="social__icon--round">
+                                <svg class="social__icon--inner">
+                                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                                </svg>
+                            </div>
+                            <span>https://github.com/princedograAU</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts__qr">
+                    <div class="card--qr">
+                        <img src="img/qr-code.svg" alt="github qr code">
+                        <p>
+                            scan & learn more about me
+                        </p>
+                    </div>
+                </div>
+                <div class="contacts__map">
+                    <div class="card--map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d100766.45470262604!2d144.97703017819504!3d-37.88481200765984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sembedded%20map!5e0!3m2!1sen!2sau!4v1606553399189!5m2!1sen!2sau" width="250" height="220" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="disclaimer mt--small">
+                <div class="disclaimer__copyright">
+                    Prince Dogra &#169; 2020. Code License - MIT
+                </div>
+                Disclaimer - All the information available on this website has been gathered from trusted health awareness websites. The visitor must however verify the information from multiple trusted sources as guidelines in such a pandemic are subject to change frequently
+            </div>
         </div>
     </div>
 </body>

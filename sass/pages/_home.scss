@@ -1,0 +1,217 @@
+.header {
+    display: flex;
+    flex-direction: row;
+
+    &__intro {
+
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        justify-content: center;
+    
+        & > * {
+            font-weight: 300;
+            font-size: 1.6rem;
+            color: $color-black;
+            position: relative;
+        } 
+
+        h1 {
+            font-size: 3.6rem;
+            font-weight: 300;
+            color: $color-primary;
+        }
+    }
+
+    &__img {
+        width: 60%;
+        padding: 0 5rem;
+        display: flex;
+        justify-content: right;
+
+        img {
+            width: 65%;
+            border-radius: 50%;
+            box-shadow: .6rem .7rem .3rem $color-grey-dark;
+            position: relative;
+            padding: 1.6rem;
+            background-color: lighten($color-grey-dark, 8%);
+        }
+    }
+}
+
+.about {
+
+    &__main {
+        display: flex;
+        flex-direction: row;
+
+        & > * {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__description {
+        font-weight: 200;
+        font-size: 1.4rem;
+        text-align: justify;
+        width: 50%;
+        margin-top: 3rem;
+
+        & > * {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            font-weight: 300;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        padding: 0 5rem;
+        display: flex;
+        justify-content: right;
+
+        img {
+            width: 65%;
+            border-radius: 2rem;
+            border: .5rem solid $color-white;
+            box-shadow: .6rem .7rem .3rem $color-grey-dark;
+        }
+    }
+}
+
+.skills {
+    
+    &__main {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+    }
+
+    &__description {
+
+        font-size: 1.4rem;
+
+        & > h2:not(:first-child) {
+            margin-top: $medium;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        li {
+            margin-right: 2rem;
+        }
+
+        ul li::before {
+            content: "";
+            color: $color-primary;
+            background-color: $color-primary;
+            display: inline-block;
+            width: .8rem;
+            height: .8rem;
+            border-radius: 50%;
+            margin-right: .8rem;
+            top: 0;
+        }
+    }
+}
+
+.contacts {
+    color: $color-grey-light;
+    padding-bottom: $medium;
+
+    .heading {
+        color: $color-grey-light;
+        border-bottom: 3px solid $color-secondary;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: row;
+
+        & > *:not(:last-child) {
+            border-right: 1px solid rgba($color-grey-light, 0.2);
+            padding-right: 5rem;
+        }
+    }
+
+    &__details {
+
+        font-size: 1.6rem;
+
+        &--list {
+            list-style: none;
+        }
+
+        &--item {
+
+            margin-bottom: 2rem;
+
+            display: flex;
+            align-items: center;
+            
+
+            .social__icon--round {
+                background-color: $color-grey-light;
+                margin-right: 3rem;
+                box-shadow: 1px 3px 3px rgba($color-black, .5);
+            }
+
+            span {
+                font-weight: 200;
+                font-size: 1.8rem;
+            }
+
+            svg {
+                fill: $color-primary;
+            }
+        }
+    }
+
+    &__qr {
+        padding: 0 5rem;
+        img {
+            width: 18rem;
+            height: 100%;
+            background-color: none;
+        }
+
+        p {
+            color: $color-black;
+            font-size: 1.2rem;
+            font-weight: 400;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    }
+
+    &__map {
+        padding: 0 5rem;
+        img {
+            width: 18rem;
+            height: 100%;
+            background-color: none;
+        }
+
+        p {
+            color: $color-black;
+            font-size: 1.2rem;
+            font-weight: 400;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    }
+}
+
+#contacts {
+    background-image: linear-gradient(-45deg, darken($color-primary, 12%), darken($color-primary, 8%), $color-primary, lighten($color-primary, 8%), lighten($color-primary, 12%));
+    background-size: 400%;
+    animation: bg-animation 4s infinite alternate ease-in-out;
+}
