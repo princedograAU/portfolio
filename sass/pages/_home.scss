@@ -185,21 +185,21 @@
 
 .experience {
 
+    font-size: 1.4rem;
+
     &__main {
         display: flex;
+
 
         & > *:not(:last-child) {
             margin-right: 3rem;
         }
     }
 
-    &__company {
-        background-color: $color-primary;
-        padding: 1.5rem;
-        border-radius: 50%;
-        margin-bottom: 3rem;
+    img {
+        width: 50%;
+        margin-bottom: 4rem;
     }
-    
 }
 
 /////////////////////////

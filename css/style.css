@@ -442,16 +442,15 @@ a {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.experience__main {
-  display: flex; }
-  .experience__main > *:not(:last-child) {
-    margin-right: 3rem; }
-
-.experience__company {
-  background-color: #0072B8;
-  padding: 1.5rem;
-  border-radius: 50%;
-  margin-bottom: 3rem; }
+.experience {
+  font-size: 1.4rem; }
+  .experience__main {
+    display: flex; }
+    .experience__main > *:not(:last-child) {
+      margin-right: 3rem; }
+  .experience img {
+    width: 50%;
+    margin-bottom: 4rem; }
 
 .contacts {
   color: #F8F8F8;
@@ -555,17 +554,19 @@ a {
   background-color: transparent; }
 
 .card__primary {
+  height: 46rem;
   position: relative;
-  padding: 2rem;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 5rem 3rem;
+  border: 1px solid rgba(198, 198, 198, 0.7);
+  padding: 6rem 4.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   flex: 1;
   align-content: stretch;
+  text-align: center;
   border-radius: 1rem;
   box-shadow: 3px 5px 6px rgba(198, 198, 198, 0.4); }
   .card__primary::before {
@@ -579,3 +580,34 @@ a {
     background-color: white;
     opacity: .1;
     z-index: -1; }
+  .card__primary--slide {
+    width: 100%;
+    position: absolute;
+    background-color: #0072B8;
+    color: #FFF384;
+    bottom: 0;
+    padding: 2rem 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 8rem;
+    transition: all 0.8s cubic-bezier(0.25, 0.1, 0.19, 1.33);
+    box-shadow: 3px 5px 6px rgba(198, 198, 198, 0.4); }
+    .card__primary--slide-content {
+      overflow: hidden;
+      box-sizing: border-box;
+      color: white;
+      text-align: justify;
+      font-size: 1.2rem;
+      height: 0;
+      transition: all 0.7s cubic-bezier(0.25, 0.1, 0.19, 1.33);
+      padding: 0 1rem; }
+  .card__primary:hover .card__primary--slide {
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-image: linear-gradient(-45deg, #004c7b, #00598f, #0072B8, #008be1, #0098f5);
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate ease-in-out; }
+  .card__primary:hover .card__primary--slide-content {
+    height: 100%;
+    display: block; }
