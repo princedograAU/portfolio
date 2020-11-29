@@ -1,3 +1,7 @@
+/////////////////////
+//   H E A D E R   //
+/////////////////////
+
 .header {
     display: flex;
     flex-direction: row;
@@ -6,9 +10,10 @@
 
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 50%;
         justify-content: center;
-    
+        
+
         & > * {
             font-weight: 300;
             font-size: 1.6rem;
@@ -17,28 +22,32 @@
         } 
 
         h1 {
-            font-size: 3.6rem;
+            font-size: 5.6rem;
             font-weight: 300;
             color: $color-primary;
         }
     }
 
     &__img {
-        width: 60%;
-        padding: 0 5rem;
+        width: 50%;
         display: flex;
         justify-content: right;
 
         img {
-            width: 65%;
+            width: 75%;
             border-radius: 50%;
-            box-shadow: .6rem .7rem .3rem $color-grey-dark;
+            box-shadow: .6rem .7rem .3rem rgba($color-grey-dark, .5);
             position: relative;
             padding: 1.6rem;
-            background-color: lighten($color-grey-dark, 8%);
+            background-color: darken($color-grey-light, 5%);
         }
     }
 }
+
+
+///////////////////
+//   A B O U T   //
+///////////////////
 
 .about {
 
@@ -123,6 +132,80 @@
     }
 }
 
+///////////////////////////
+//   E D U C A T I O N   //
+///////////////////////////
+.education {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: $color-grey-light;
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    &__icon {
+        fill: $color-white;
+        width: 10rem;
+        height: 10rem;
+        display: inline-block;
+    }
+
+    &__heading {
+        flex: 0 0 30%;
+        
+        h2 {
+            color: $color-secondary;
+            font-weight: 500;
+        }
+    }
+
+    &__main {
+        color: $color-white;
+        font-style: italic;
+    }
+}
+
+#education {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(lighten($color-primary, 15%), .96),
+        rgba(darken($color-primary, 15%), .96)),
+        url('../../img/library-2.jpg');
+    
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/////////////////////////////
+//   E X P E R I E N C E   //
+/////////////////////////////
+
+.experience {
+
+    &__main {
+        display: flex;
+
+        & > *:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__company {
+        background-color: $color-primary;
+        padding: 1.5rem;
+        border-radius: 50%;
+        margin-bottom: 3rem;
+    }
+    
+}
+
+/////////////////////////
+//   C O N T A C T S   //
+/////////////////////////
+
 .contacts {
     color: $color-grey-light;
     padding-bottom: $medium;
@@ -134,7 +217,6 @@
 
     &__main {
         display: flex;
-        flex-direction: row;
 
         & > *:not(:last-child) {
             border-right: 1px solid rgba($color-grey-light, 0.2);
@@ -145,6 +227,7 @@
     &__details {
 
         font-size: 1.6rem;
+        flex: 0 0 50%;
 
         &--list {
             list-style: none;
@@ -177,8 +260,9 @@
 
     &__qr {
         padding: 0 5rem;
+        flex: 0 0 25%;
         img {
-            width: 18rem;
+            width: 100%;
             height: 100%;
             background-color: none;
         }
@@ -193,11 +277,16 @@
     }
 
     &__map {
+        flex: 0 0 30%;
         padding: 0 5rem;
         img {
-            width: 18rem;
+            width: 100%;
             height: 100%;
             background-color: none;
+        }
+
+        iframe {
+            width: 100%;
         }
 
         p {
