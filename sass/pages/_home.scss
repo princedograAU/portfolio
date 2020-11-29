@@ -5,13 +5,25 @@
 .header {
     display: flex;
     flex-direction: row;
+    height: 90vh;
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-white, .9),
+        rgba($color-white, .5)
+    ),
+    url('../../img/profile-2.jpg');
+    background-position: top;
+    background-size: cover;
 
     &__intro {
 
+        padding-left: 20rem;
         display: flex;
         flex-direction: column;
         width: 50%;
         justify-content: center;
+        background-color: $color-white;
         
 
         & > * {
@@ -25,21 +37,6 @@
             font-size: 5.6rem;
             font-weight: 300;
             color: $color-primary;
-        }
-    }
-
-    &__img {
-        width: 50%;
-        display: flex;
-        justify-content: right;
-
-        img {
-            width: 75%;
-            border-radius: 50%;
-            box-shadow: .6rem .7rem .3rem rgba($color-grey-dark, .5);
-            position: relative;
-            padding: 1.6rem;
-            background-color: darken($color-grey-light, 5%);
         }
     }
 }
