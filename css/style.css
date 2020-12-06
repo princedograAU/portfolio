@@ -331,11 +331,7 @@ a {
 
 .header {
   display: flex;
-  flex-direction: row;
-  height: 90vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)), url("../../img/profile-2.jpg");
-  background-position: top;
-  background-size: cover; }
+  flex-direction: row; }
   .header__intro {
     padding-left: 20rem;
     display: flex;
@@ -352,6 +348,12 @@ a {
       font-size: 5.6rem;
       font-weight: 300;
       color: #0072B8; }
+  .header__img {
+    width: 50%;
+    align-self: flex-end; }
+    .header__img img {
+      margin-top: 10rem;
+      width: 80%; }
 
 .about__main {
   display: flex;
@@ -594,7 +596,7 @@ a {
     transition: all 0.8s cubic-bezier(0.25, 0.1, 0.19, 1.33);
     box-shadow: 3px 5px 6px rgba(198, 198, 198, 0.4); }
     .card__primary--slide-content {
-      margin-top: 1.2rem;
+      margin-top: 1rem;
       overflow: hidden;
       box-sizing: border-box;
       color: white;
