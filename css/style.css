@@ -349,11 +349,12 @@ a {
       font-weight: 300;
       color: #0072B8; }
   .header__img {
-    width: 50%;
-    align-self: flex-end; }
+    width: 40%;
+    align-self: flex-end;
+    margin-top: 10rem; }
     .header__img img {
       margin-top: 10rem;
-      width: 80%; }
+      width: 90%; }
 
 .about__main {
   display: flex;
@@ -432,7 +433,7 @@ a {
     font-style: italic; }
 
 #education {
-  background-image: linear-gradient(to right bottom, rgba(6, 160, 255, 0.96), rgba(0, 67, 108, 0.96)), url("../../img/library-2.jpg");
+  background-image: linear-gradient(to right bottom, rgba(6, 160, 255, 0.96), rgba(0, 67, 108, 0.96)), url("../../img/parallax-education.png");
   width: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -440,7 +441,7 @@ a {
   background-size: cover; }
 
 .experience {
-  font-size: 1.4rem; }
+  font-size: 1.2rem; }
   .experience__main {
     display: flex; }
     .experience__main > *:not(:last-child) {
@@ -582,7 +583,7 @@ a {
   border-radius: 1rem;
   box-shadow: 3px 5px 6px rgba(198, 198, 198, 0.4); }
   .card__primary img {
-    height: 5rem; }
+    height: 4rem; }
   .card__primary--slide {
     width: 100%;
     position: absolute;
