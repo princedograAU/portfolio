@@ -1,7 +1,6 @@
 /////////////////////
 //   H E A D E R   //
 /////////////////////
-
 .header {
     display: flex;
     flex-direction: row;
@@ -46,7 +45,6 @@
 ///////////////////
 //   A B O U T   //
 ///////////////////
-
 .about {
 
     &__main {
@@ -180,7 +178,6 @@
 /////////////////////////////
 //   E X P E R I E N C E   //
 /////////////////////////////
-
 .experience {
 
     font-size: 1.2rem;
@@ -200,10 +197,23 @@
     }
 }
 
+
+/////////////////////////
+//   P R O J E C T S   //
+/////////////////////////
+.projects {
+
+    height: 100%;
+
+    &__main {
+        margin-top: 5rem;
+    }
+}
+
+
 /////////////////////////
 //   C O N T A C T S   //
 /////////////////////////
-
 .contacts {
     color: $color-grey-light;
     padding-bottom: $medium;
