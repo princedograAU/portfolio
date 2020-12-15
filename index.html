@@ -57,21 +57,36 @@
     
                 <a href="#" class="btn btn__primary btn__animate mt--xxlarge">download resume &#8594;</a>
             </div>
-            <!-- <div class="header__img">
-                <img src="img/avatar-new1.png" alt="avatar">
-            </div> -->
             <object data="img/avatar-high-res.svg" type="image/svg+xml" class="header__img">
                 <img src="img/avatar-200x200dpi.png" />
               </object>
-            <!-- <div class="header__img">
-                <img src="img/avatar-high-res.svg" alt="avatar">
-            </div> -->
         </div>
     </div>
     <div class="container__fluid bg__light" id="about">
         <div class="about container">
             <div class="heading">about</div>
             <div class="about__main mt--large">
+                <div class="about__gallery">
+                    <div class="composition">
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                             alt="Photo 1"
+                             class="composition__photo composition__photo--p1"
+                             src="img/nat-1-large.jpg">
+
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                             alt="Photo 2"
+                             class="composition__photo composition__photo--p2"
+                             src="img/nat-2-large.jpg">
+
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                             alt="Photo 3"
+                             class="composition__photo composition__photo--p3"
+                             src="img/nat-3-large.jpg">
+                    </div>
+                </div>
                 <div class="about__description">
                     <h2>I am a Full-Stack Django/React <br/> from Melbourne, Australia</h2>
                     <p>
@@ -86,21 +101,25 @@
                         gains.
                     </p>
                     <p>
-                        Being a technology enthusiast, I love to learn new skills and implement them in my current work. 
-                        For example - robot in this picture was developed by me with my friends at university in 2014 using
-                        the popular technologies of that time namely Android and IOT.
+                        Apart from my daily IT work, I try my hands on IOT, cooking and I love watching cricket. If you also love
+                        any of these then we can be a great team. 
                     </p>
-                </div>
-                <div class="about__img">
-                    <img src="img/rovodroid.jpeg" alt="rovodroid">
                 </div>
             </div>
             
         </div>
     </div>
     <div class="container__fluid" id="skills">
-        <div class="skills container">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="img/video.mp4" type="video/mp4">
+                <!-- <source src="img/video.webm" type="video/webm"> -->
+                Your browser is not supported!
+            </video>
+        </div>
+        <div class="skills">
             <div class="heading">skills</div>
+            
             <div class="skills__main mt--xlarge">
                 <div class="skills__description">
                     <h2>Front-end</h2>
@@ -133,9 +152,6 @@
                         <li>Linux/Windows</li>
                         <li>Pandas</li>
                     </ul>
-                </div>
-                <div class="skills__img">
-
                 </div>
             </div>
         </div>
