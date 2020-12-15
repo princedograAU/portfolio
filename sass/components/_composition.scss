@@ -49,7 +49,7 @@
         }
 
         &:hover {
-            outline: 1.2rem solid $color-primary;
+            outline: 1.2rem solid $color-secondary;
             transform: scale(1.05) translateY(-.5rem);
             box-shadow: 0 2rem 2rem rgba($color-black, .6);
             z-index: 20;

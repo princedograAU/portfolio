@@ -1,9 +1,8 @@
 .navigation {
-    background-color: $color-grey-light;
     width: 100%;
     height: 8rem;
     position: fixed;
-    background-color: $color-grey-light;
+    background-color: $color-grey;
     opacity: .9;
     top: 0;
     padding: 0 4rem;
@@ -13,7 +12,7 @@
     align-items: center;
     z-index: 100;
 
-    box-shadow: 0 3px 6px $color-grey-dark;
+    // box-shadow: 0 3px 6px $color-grey;
 
 
     & > * {
@@ -39,17 +38,17 @@
     }
 
     &__link {
-        color: $color-black;
-        font-size: 1.4rem;
+        color: $color-white;
+        font-size: 1.6rem;
         margin-right: 3rem;  
 
         &:visited {
-            border-bottom: 2px solid $color-primary;
+            border-bottom: 2px solid $color-secondary;
         }
         
         &:hover,
         &:active {
-            border-bottom: 2px solid $color-primary;
+            border-bottom: 2px solid $color-secondary;
         }
     }
 
@@ -61,8 +60,8 @@
         justify-content: center;
 
         a {
-            color: $color-black;
-            border-bottom: 3px solid $color-primary;
+            color: $color-white;
+            border-bottom: 3px solid $color-secondary;
 
         }
     }
@@ -73,14 +72,14 @@
     }
 
     .social__icon--round {
-        background-color: $color-white;
-        box-shadow: 0 3px 2px $color-grey-dark;
+        background-color: $color-grey-dark;
+        box-shadow: 0 3px 2px $color-black;
         &:hover {
             box-shadow: 0px 3px 2px rgba($color-black, 0.3);
             background-color: $color-white;
             border-radius: 1px solid $color-white;
             svg {
-                fill: rgba($color-black, .5);
+                fill: rgba($color-grey, .5);
             }
         }
 
@@ -93,6 +92,6 @@
     }
 
     svg {
-        fill: $color-grey-dark;
+        fill: $color-grey;
     }
 }

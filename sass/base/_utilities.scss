@@ -30,6 +30,19 @@ a {
 }
 
 .bg {
+
+    &__black {
+        background-color: $color-black;
+    }
+
+    &__dark {
+        background-color: $color-dark;
+    }
+
+    &__grey {
+        background-color: $color-grey;
+    }
+
     &__light {
         background-color: $color-grey-light;
     }
@@ -249,7 +262,7 @@ a {
     max-width: 28rem;
     padding: 1.5rem 5rem;
     border-radius: 5rem;
-    box-shadow: 3px 5px 3px rgba($color-black, .4);
+    box-shadow: 3px 5px 3px rgba($color-black, .9);
     transition: .1s all ease-in;
     text-align: center;
     border: 1px solid $color-grey-light;
